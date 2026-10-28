@@ -11,10 +11,12 @@
 npx skills add Kayphoon/librarian
 
 # 本仓库自带安装器（零依赖，默认装到 ~/.agents/skills）
-npx github:Kayphoon/librarian
-npx github:Kayphoon/librarian --target codex
-npx github:Kayphoon/librarian --project ./my-repo
+npx github:Kayphoon/librarian#v1.0.1
+npx github:Kayphoon/librarian#v1.0.1 --target codex
+npx github:Kayphoon/librarian#v1.0.1 --project ./my-repo
 ```
+
+`#v1.0.1` 是 git ref，解析到对应 tag 或 commit，钉住之后不受默认分支后续改动影响；省略 ref 则跟随默认分支 HEAD，升级时加 `--force` 覆盖已装副本。
 
 装好后新开一次会话让运行时重新发现 skill。
 
