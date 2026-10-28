@@ -1,0 +1,42 @@
+{
+  "name": "@kayphoon/librarian-skill",
+  "version": "1.0.0",
+  "description": "Librarian skill: read-only research of external docs, OSS sources and vendor APIs with commit-pinned evidence.",
+  "type": "module",
+  "bin": {
+    "librarian-skill": "bin/skill.mjs"
+  },
+  "files": [
+    "bin",
+    "SKILL.md",
+    "references",
+    "tests",
+    "LICENSE.txt",
+    "NOTICE.md",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "info": "node bin/skill.mjs info"
+  },
+  "keywords": [
+    "agent-skills",
+    "skills",
+    "codex",
+    "claude-code",
+    "librarian",
+    "documentation",
+    "npx"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kayphoon/librarian.git"
+  },
+  "homepage": "https://github.com/Kayphoon/librarian#readme",
+  "bugs": {
+    "url": "https://github.com/Kayphoon/librarian/issues"
+  }
+}
