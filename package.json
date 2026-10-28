@@ -1,6 +1,6 @@
 {
   "name": "@kayphoon/librarian-skill",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Librarian skill: read-only research of external docs, OSS sources and vendor APIs with commit-pinned evidence.",
   "type": "module",
   "bin": {
