@@ -4,6 +4,8 @@
 
 这是自包含分发单元：根目录 `SKILL.md` 是入口，`references/role.md` 是委派时逐字嵌入的行为正文。本地工作树调查不归它管，那是 explorer 的边界。
 
+文档检索默认优先走 Context7（`https://mcp.context7.com/mcp`），依赖声明在 [agents/openai.yaml](agents/openai.yaml)。声明只是告诉宿主该 skill 期望什么能力，是否真的接通以子代理实际可见的工具为准；不可用时回退官方文档并说明限制。
+
 ## 安装
 
 ```bash
@@ -17,7 +19,7 @@ npx github:Kayphoon/librarian#semver:^1.0.0 --target codex
 npx github:Kayphoon/librarian#semver:^1.0.0 --project ./my-repo
 ```
 
-`#semver:^1.0.0` 每次都会解析到最新的 1.x tag，适合日常使用；想锁死具体版本就写 `#v1.0.2`，或者直接写 commit SHA。省略 ref 写 `npx github:Kayphoon/librarian` 则跟随默认分支 HEAD，可能包含还没发版的提交；替换已装副本加 `--force`。
+`#semver:^1.0.0` 每次都会解析到最新的 1.x tag，适合日常使用；想锁死具体版本就写 `#v1.0.3`，或者直接写 commit SHA。省略 ref 写 `npx github:Kayphoon/librarian` 则跟随默认分支 HEAD，可能包含还没发版的提交；替换已装副本加 `--force`。
 
 装好后新开一次会话让运行时重新发现 skill。
 
