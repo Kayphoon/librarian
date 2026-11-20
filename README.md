@@ -1,3 +1,5 @@
+> **已迁移**：本 skill 现在维护在 [Kayphoon/superkit](https://github.com/Kayphoon/superkit)，路径 `skills/librarian/`。本仓库保留为只读归档，历史仍在。
+
 # librarian
 
 外部资料只读研究 skill：查外部库、OSS、厂商 API 的官方文档与源码、版本差异、issue/PR 和变更历史，并把结论钉到 commit 与代码行，供主模型核验。
